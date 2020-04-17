@@ -37,7 +37,7 @@
       <artifactId>spring-webmvc</artifactId>
       <version>${org.springframework.version}</version>
     </dependency>
-
+    <!--  -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-oxm</artifactId>
@@ -63,12 +63,18 @@
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+    <!-- aop  -->
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
       <version>1.9.3</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>1.9.3</version>
+    </dependency>
 
     <dependency>
       <groupId>org.mybatis</groupId>
@@ -82,12 +88,7 @@
       <version>${org.mybatis.version}</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
-    <dependency>
-      <groupId>org.aspectj</groupId>
-      <artifactId>aspectjrt</artifactId>
-      <version>1.9.3</version>
-    </dependency>
+
 
     <!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl -->
     <dependency>
@@ -95,6 +96,13 @@
       <artifactId>jackson-mapper-asl</artifactId>
       <version>1.9.13</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl -->
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+      <version>1.9.13</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -148,6 +156,7 @@
      <!-- <scope>test</scope>-->
     </dependency>
     <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+    <!-- 时间处理-->
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
@@ -188,6 +197,7 @@
       <version>5.1.8</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/com.github.miemiedev/mybatis-paginator -->
+    <!-- 分页 -->
     <dependency>
       <groupId>com.github.miemiedev</groupId>
       <artifactId>mybatis-paginator</artifactId>
@@ -249,15 +259,6 @@
       <version>3.0.1</version>
     </dependency>
 
-
-
-
-
-
-
-
-
-
   </dependencies>
 
   <build>
@@ -285,7 +286,7 @@
             <source>1.8</source>
             <target>1.8</target>
             <encoding>UTF-8</encoding>
-            <compilerArguments>
+            <compilerArguments>  <!-- 将 支付宝sdk 打包到一起 -->
               <extdirs>${project.basedir}/src/main/webapp/WEB-INF/lib</extdirs>
             </compilerArguments>
           </configuration>
