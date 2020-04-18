@@ -15,11 +15,11 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
-
+    //检查是否存在
     int checkUsername(String username);
 
     int checkEmail(String email);
-
+    //登录用
     User selectLogin(@Param("username") String username, @Param("password") String password);
 
     String selectQuestionByUsername(String username);
