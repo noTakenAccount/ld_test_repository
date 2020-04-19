@@ -215,6 +215,8 @@
       <artifactId>jsqlparser</artifactId>
       <version>1.3</version>
     </dependency>
+
+
     <!-- alipay -->
     <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
     <dependency>
@@ -241,7 +243,7 @@
       <version>1.2</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
-    <dependency>
+    <dependency>  <!-- 生成二维码  -->
       <groupId>com.google.zxing</groupId>
       <artifactId>core</artifactId>
       <version>3.3.3</version>
